@@ -8,7 +8,7 @@
     android:background="@android:color/holo_orange_light">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imgCurrency"
         android:layout_width="405dp"
         android:layout_height="wrap_content"
 
@@ -20,7 +20,7 @@
         app:srcCompat="@drawable/currency" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tvInstruction"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="3dp"
@@ -31,10 +31,10 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        app:layout_constraintTop_toBottomOf="@+id/imgCurrency" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/etAmount"
         android:layout_width="400dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="6dp"
@@ -45,5 +45,20 @@
         android:inputType="numberDecimal"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tvInstruction" />
+
+    <Button
+        android:id="@+id/btnConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="162dp"
+        android:background="@color/colorAccent"
+        android:text="Convert!"
+        android:textColor="@android:color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etAmount" />
 </androidx.constraintlayout.widget.ConstraintLayout>
