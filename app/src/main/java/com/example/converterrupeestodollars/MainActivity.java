@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this,
                         valInDollars + "$ is " + valInRupees + "₹",
                         Toast.LENGTH_LONG).show();
+                etAmount.setText(null);
             }
 
         });
