@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
                 Float valInRupeesDouble = (float)(valInDollarsDouble * 69.30);
                 String valInRupees = String.valueOf(valInRupeesDouble);
                 Toast.makeText(MainActivity.this,
-                        valInDollars + "$ is " + valInRupees + "₹",
+                        valInDollars + "$ is " + "₹" +valInRupees ,
                         Toast.LENGTH_LONG).show();
                 etAmount.setText(null);
             }
