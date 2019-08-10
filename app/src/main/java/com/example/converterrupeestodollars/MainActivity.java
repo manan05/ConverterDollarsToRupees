@@ -27,9 +27,8 @@ public class MainActivity extends AppCompatActivity {
                 Float valInDollarsDouble = Float.parseFloat(valInDollars);
                 Float valInRupeesDouble = (float)(valInDollarsDouble * 69.30);
                 String valInRupees = String.valueOf(valInRupeesDouble);
-                Toast.makeText(MainActivity.this,
-                        valInDollars + "$ is " + "₹" +valInRupees ,
-                        Toast.LENGTH_LONG).show();
+                Toast.makeText(MainActivity.this,valInDollars + "$ is " + "₹" +valInRupees,Toast.LENGTH_LONG).show();
+                // This will make a popup on the screen with the converted value
                 etAmount.setText(null);
             }
 
