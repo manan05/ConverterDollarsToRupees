@@ -29,7 +29,7 @@ public class MainActivity extends AppCompatActivity {
                 String valInRupees = String.valueOf(valInRupeesDouble);
                 Toast.makeText(MainActivity.this,valInDollars + "$ is " + "₹" +valInRupees,Toast.LENGTH_LONG).show();
                 // This will make a popup on the screen with the converted value
-                etAmount.setText(null);
+                etAmount.setText(null); // this will make the text in EditText empty for the next value
             }
 
         });
