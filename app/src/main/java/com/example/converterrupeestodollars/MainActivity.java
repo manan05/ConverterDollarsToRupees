@@ -23,17 +23,31 @@ public class MainActivity extends AppCompatActivity {
         btnConvert.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+<<<<<<< HEAD
+                if (!etAmount.getText().toString().equals("")) {
+                    String valInDollars = etAmount.getText().toString();
+                    Float valInDollarsDouble = Float.parseFloat(valInDollars);
+                    Float valInRupeesDouble = (float) (valInDollarsDouble * 69.30);
+                    String valInRupees = String.valueOf(valInRupeesDouble);
+                    Toast.makeText(MainActivity.this,
+                            valInDollars + "$ is " + "₹" + valInRupees,
+                            Toast.LENGTH_LONG).show();
+                    etAmount.setText(null);
+                }
+
+            }});
+=======
                 String valInDollars = etAmount.getText().toString();
                 Float valInDollarsDouble = Float.parseFloat(valInDollars);
                 Float valInRupeesDouble = (float)(valInDollarsDouble * 69.30);
                 String valInRupees = String.valueOf(valInRupeesDouble);
-                Toast.makeText(MainActivity.this,
-                        valInDollars + "$ is " + "₹" +valInRupees ,
-                        Toast.LENGTH_LONG).show();
-                etAmount.setText(null);
+                Toast.makeText(MainActivity.this,valInDollars + "$ is " + "₹" +valInRupees,Toast.LENGTH_LONG).show();
+                // This will make a popup on the screen with the converted value
+                etAmount.setText(null); // this will make the text in EditText empty for the next value
             }
 
         });
+>>>>>>> 89d3120d4d388cf32297cbf1fb64679786d85938
 
     }
 
